@@ -14,7 +14,7 @@ def signaltonoise(a, axis=0, ddof=0):
     return np.where(sd == 0, 0, m/sd)
 
 
-def plot_grid_w_grid(indicator: str, abbreviation: str, units: str, plot_quintiles: bool = False) -> None:
+def subplots_based_on_grid(indicator: str, abbreviation: str, units: str, plot_quintiles: bool = False) -> None:
     """Plot indicator for all countries in a grid
 
     Args:
@@ -220,12 +220,12 @@ def plot_grid_w_grid(indicator: str, abbreviation: str, units: str, plot_quintil
             print('Number of camps in {}: {}'.format(country, n_camps))
             k += 1
             descriptive_statistics[country] = ds
-    # plt.savefig(f'C:/Users/Mikhail/My Drive/0 Code/exposure-refugee-camps/figures/{indicator}.png', dpi=300)
+    plt.savefig(f'C:/Users/Mikhail/My Drive/0 Code/exposure-refugee-camps/figures/{indicator}.pdf')
 
     return descriptive_statistics
 
 
-def plot_grid_w_average(indicator: str, abbreviation: str, units: str) -> None:
+def subplots_based_on_average(indicator: str, abbreviation: str, units: str) -> None:
     """Plot indicator for all countries in a grid
 
     Args:
@@ -380,7 +380,7 @@ def plot_grid_w_average(indicator: str, abbreviation: str, units: str) -> None:
             k += 1
 
 
-def plot_single_graph(indicator: str, units: str) -> None:
+def single_plot(indicator: str, units: str) -> None:
     """Plot a single graph for a given indicator.
 
     Args:
