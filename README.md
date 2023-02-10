@@ -1,4 +1,4 @@
-# exposure-refugee-camps
+# exposure-of-refugee-camps
 How exposed are refugee camps to various climatic shocks and stresses?
 
 ## Background
