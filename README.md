@@ -33,11 +33,13 @@ We analyse refugee camps of 10 countries:
 
 ## Methodology
 The methodology is described in the paper. The main idea is to use the climate data to estimate the exposure of refugee camps to various climatic shocks and stresses. The exposure is estimated for the following climate variables:
-* 2 m temperature -> Teamperature
-* Total precipitation -> Precipitation
-* Heavy precipitation days -> Floods
-* Warm spell duration index -> Heat waves
-* Cold spell duration index -> Cold waves
+|   	| Indicator                 	| Exposure      	| Unit 	| Comments 	|
+|---	|---------------------------	|---------------	|------	|----------	|
+|   	| 2 m temperature           	| Temperature   	|      	|          	|
+|   	| Total precipitation       	| Precipitation 	|      	|          	|
+|   	| Heavy precipitation days  	| Floods        	|      	|          	|
+|   	| Warm spell duration index 	| Heatwaves     	|      	|          	|
+|   	| Cold spell duration index 	| Coldwaves     	|      	|          	|
 
 ## Main findings
 
