@@ -1,9 +1,9 @@
-library(terra)
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
 # Aggregate a raster to a different resolution
 # Population grid has a resolution of 1km
 # And the climate data has a resolution of 5km
+
+library(terra)
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 countries = c('Bangladesh',
               'Ethiopia',
@@ -17,7 +17,7 @@ countries = c('Bangladesh',
               'Uganda'
               )
 
-### t2m, tp
+### Use this piece of code for t2m, tp indicators
 
 timestamps <- seq(0, 467, by=1)
 index <- countries
@@ -97,7 +97,7 @@ for (country in countries){
   write.csv(grid, path)
 }
 
-### csdi, wsdi, r10mm
+### Use this piece of code for csdi, wsdi, r10mm indictors
 
 timestamps <- seq(0, 1078, by=1)
 index <- countries
