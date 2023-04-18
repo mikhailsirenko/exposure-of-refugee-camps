@@ -55,7 +55,7 @@ The repo is organised as follows:
 * `data/` - contains the raw and processed data,
 * `figures/` - contains the figures,
 * `get-climate-grid.ipynb` - downloads the climate data,
-* `get-population-grid.ipynb` - downloads the population data,
+* `extract-population-grid.ipynb` - exctracts the population data for the countries of interest,
 * `aggregate-grids.r` - aggregates the climate and scales it with population data,
 * `visualise-data.ipynb` - visualises the data,
 * `results/` - contains the descriptive statistics,
