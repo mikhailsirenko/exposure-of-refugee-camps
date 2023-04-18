@@ -193,34 +193,39 @@ def subplots_based_on_grid(indicator: str, abbreviation: str, units: str, plot_q
                 d['Diff.'] = df[camp].mean() - wa.mean()
                 ds[camp] = d
 
-            # textstr = f'Mean camp {abbreviation}={camp_mean} ({units}) \n\
-            #             Std camp {abbreviation}={camp_std} ({units}) \n\
-            #             Mean diff={diff_mean} ({units}) \n\
-            #             Std diff={diff_std} ({units}) \n\
-            #             SNR diff={signal_to_noise}'
+            textstr = f'Mean camp {abbreviation}={camp_mean} ({units}) \n\
+                        Std camp {abbreviation}={camp_std} ({units}) \n\
+                        Mean diff={diff_mean} ({units}) \n\
+                        Std diff={diff_std} ({units}) \n\
+                        SNR diff={signal_to_noise}'
 
-            # props = dict(alpha=0.5, facecolor='white', edgecolor='black')
-            # ax[i, j].annotate(text=textstr,
-            #                   xy=(1.035, 1.05),
-            #                   # xy=(0.885,0.45),
-            #                   xytext=(-15, -15),
-            #                   xycoords='axes fraction',
-            #                   textcoords='offset points',
-            #                   bbox=props,
-            #                   fontsize=8,
-            #                   verticalalignment='top',
-            #                   horizontalalignment='right')
+            props = dict(alpha=0.5, facecolor='white', edgecolor='black')
+            ax[i, j].annotate(text=textstr,
+                              xy=(1.035, 1.05),
+                              # xy=(0.885,0.45),
+                              xytext=(-15, -15),
+                              xycoords='axes fraction',
+                              textcoords='offset points',
+                              bbox=props,
+                              fontsize=8,
+                              verticalalignment='top',
+                              horizontalalignment='right')
 
             # Fix other plot params
             ax[i, j].set_ylabel(f'Deviation from pop. weight. av. ({units})')
             ax[i, j].set_xlabel('Year')
-            # ax[i, j].set_title(country)
+            ax[i, j].set_title(country)
+
+            if indicator == 'floods':
+                fig.suptitle(f'Extreme rainfall', fontsize=16)
+            else:
+                fig.suptitle(f'{indicator.capitalize()}', fontsize=16)
             # ax[i, j].legend('')
 
             print('Number of camps in {}: {}'.format(country, n_camps))
             k += 1
             descriptive_statistics[country] = ds
-    plt.savefig(f'C:/Users/Mikhail/My Drive/0 Code/exposure-refugee-camps/figures/{indicator}.pdf')
+    plt.savefig(f'C:/Users/Mikhail/My Drive/0 Code/exposure-refugee-camps/figures/{indicator}.png', dpi=300)
 
     return descriptive_statistics
 
