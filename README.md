@@ -5,17 +5,11 @@ How exposed are refugee camps to various climatic shocks and stresses?
 This repository contains the data and the code behind the PNAS publication "Refugee settlements are highly exposed to extreme weather conditions." 
 
 ## Case studies
-We analyse refugee camps of 10 countries:
-* Bangladesh,
-* Ethiopia,
-* Jordan,
-* Kenya,
-* Pakistan,
-* Rwanda,
-* Sudan,
-* South Sudan,
-* Tanzania,
-* Uganda.
+We analyse 22 refugee camps of 10 countries: Bangladesh, Ethiopia, Jordan, Kenya, Pakistan, Rwanda, Sudan, South Sudan, Tanzania, Uganda.
+
+<p align="center">
+    <img src="figures/countries.png" title="Countries of interest" width=600>
+</p>
 
 ## Data
 We used two types of **open** data sets in this study: **climate** and **population.** Let's us briefly explain what are the data sets and how you can download them.
