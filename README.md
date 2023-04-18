@@ -29,7 +29,7 @@ The **population data** or Population Counts comes from [WorldPop](https://hub.w
 
 The climate data is available in a TIF file. It is spatio-temporal data and has a 5 by 5 km spatial resolution. ERA5-Land monthly averaged data is available from 1980 to 2019. Agroclimatic indicators data is available from 1981 to 2012. The Population Counts is also a TIF file. While it has been available for multiple years, for the sake of our study, we selected the latest available - 2020. The population data has a 1 by 1 km spatial resolution.
 
-You can download or process most of the data sets with the use of `get-climate-grid.ipynb` and `get-population-grid.ipynb`. Note that to download the data you will have request an API key from the CDS. This process is quite straightforward and you can find the instructions [here](https://cds.climate.copernicus.eu/api-how-to). You also can find the raw and processed data on the [4TU.ResearchData](https://figshare.com/s/86e5a5d5c4bd206a25c7).
+You can download or process most of the data sets with the use of `get-climate-grid.ipynb` and `extract-population-grid.ipynb`. Note that to download the data you will have request an API key from the CDS. This process is quite straightforward and you can find the instructions [here](https://cds.climate.copernicus.eu/api-how-to). You also can find the raw and processed data on the [4TU.ResearchData](https://figshare.com/s/86e5a5d5c4bd206a25c7).
 
 ## Methodology
 The methodology is described in the paper. The main idea is to use the climate data to estimate the exposure of refugee camps to various climatic shocks and stresses. The exposure is estimated for the following climate variables:
@@ -62,7 +62,7 @@ The repo is organised as follows:
 * `README.md` - this file.
 
 ## How to reproduce results?
-You can reproduce the results by simply rerunning `visualise-data.ipynb`. Note that you have to have the data downloaded and processed. You can do this by running `get-climate-grid.ipynb`, `get-population-grid.ipynb` and `aggregate-grids.r`.
+You can reproduce the results by simply rerunning `visualise-data.ipynb`. Note that you have to have the data downloaded and processed. You can do this by running `get-climate-grid.ipynb`, `extract-population-grid.ipynb` and `aggregate-grids.r`.
 
 ## Authors
 [*Mikhail Sirenko*](https://twitter.com/mikhailsirenko)
