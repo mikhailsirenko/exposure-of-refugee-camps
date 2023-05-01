@@ -1,8 +1,8 @@
 # exposure-of-refugee-camps
 How exposed are refugee camps to various climatic shocks and stresses?
 
-## Background
-This repository contains the data and the code behind the PNAS publication "Refugee settlements are highly exposed to extreme weather conditions." 
+## Abstract
+Involuntary displacement from conflict and other causes leads to clustering of refugees and internally displaced people, often in **long-term settlements**. Within refugee-hosting countries, refugee settlements are frequently located in isolated and remote areas, characterized by poor quality land and harsh climatic conditions. Yet, the exposure of refugee settlements to climatic events is under researched. In this article, we study the exposure of the 20 largest refugee settlements worldwide to extreme variations in climate conditions. The analysis integrates exposure of camp locations compared to the national averages for both slow and rapid onset events. Our findings show that most refugee settlements included face relatively high exposure to slow-onset events, including high temperatures (for settlements in Kenya, Ethiopia, Rwanda, Sudan, and Uganda), low temperatures (in the case of Jordan and Pakistan), and low levels of rainfall (in Ethiopia, Rwanda, Kenya, and Uganda) compared to national averages. Our findings for rapid- onset events – heatwaves, coldwaves and extreme rainfall – are less conclusive compared to country trends, although we find relatively high exposure to extreme rainfall in Cox’s Bazar, Bangladesh. Our analysis confirms that refugee populations are exposed to extreme weather conditions post-displacement, which, in combination with their socio-political exclusion, poses a threat to wellbeing and increased marginalization. Our findings call for an inclusive and integrated approach, including refugees and their host communities, in designing climate adaptation and sustainable development policies, in order to promote equitable sustainable development pathways in refugee-hosting countries.
 
 ## Case studies
 We analyse 22 refugee camps of 10 countries: Bangladesh, Ethiopia, Jordan, Kenya, Pakistan, Rwanda, Sudan, South Sudan, Tanzania, Uganda.
@@ -14,7 +14,7 @@ We analyse 22 refugee camps of 10 countries: Bangladesh, Ethiopia, Jordan, Kenya
 ## Data
 We used two types of **open** data sets in this study: **climate** and **population.** Let's us briefly explain what are the data sets and how you can download them.
 
-The **climate data** comes from the [Climate Data Store](https://cds.climate.copernicus.eu/#!/home) (CDS) by Copernicus Climate Change Service and the two data sets are:
+The **climate data** comes from the [Climate Data Store](https://cds.climate.copernicus.eu/#!/home) (CDS) by Copernicus Climate Change Service. You may use the following Python package to access the data from the Climate Data Store [cdsapi](https://github.com/ecmwf/cdsapi). The two data sets are:
 * [ERA5-Land monthly averaged](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land-monthly-means?tab=form),
 * [Agroclimatic indicators](https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-agroclimatic-indicators?tab=form).
 
@@ -38,6 +38,8 @@ The methodology is described in the paper. The main idea is to use the climate d
 We use Population Counts to scale each climate variable. This way, we can estimate the exposure of the refugee camps to the climate variables per capita - *weighted average*.
 
 ## Main findings
+
+The following table summarises the main findings of the study. 
 
 <p align="center">
     <img src="results/descriptive_statistics.jpg" title="Descriptive statistics">
